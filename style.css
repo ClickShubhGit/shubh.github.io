@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Jost', sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.music-container{
+    height: 31rem;
+    width: 20rem;
+    /* background-color:#0c1114; */
+    background: transparent;
+    border-radius: 40px;
+    box-shadow: 0px 0px 22px 2px #0000008f;
+    text-align:center;
+ 
+
+
+}
+.music-container #songName{
+    font-size:24px;
+    text-transform: uppercase;
+    word-spacing: 0.18rem;
+    letter-spacing: .15rem;
+    margin-top: 5%;
+}
+.music-container #artistName{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 2%;
+    color: #52525296;
+}
+.img-container{
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+    margin-top: 10%;
+    margin-bottom: 12%;
+    /* box-shadow: 0 0px 17px 1px #b28aff; */
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0px 17px 20px #85969c;
+    /* box-shadow: inset 0 0 12px 12px rgb(189, 100, 100), inset 0 0 13px 20px rgb(207, 13, 13);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); */
+}
+.control-buttons{
+    margin-top: 20%;
+    box-shadow: 0 0px 16px -4px #111111 ;
+    width: 15rem;
+    margin: auto;
+     /* background-color: #d59c9c; */
+    background: transparent ;
+    border-radius: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1.2rem;
+}
+.control-buttons .playBtn{
+    width: 2rem;
+    height: 2rem;
+    background-color: #111;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-buttons .fas:hover{
+   color: grey;
+   cursor: pointer;
+}
+.rotateAnime{
+    animation: rotatePic 7s linear infinite;
+}
+
+@keyframes rotatePic{
+    /* from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);} */
+        0%{
+            transform: scale(.75);
+        }
+        20%{
+            transform: scale(1);
+        }
+        40%{
+            transform: scale(.75);
+        }
+        60%{
+            transform: scale(1);
+        }
+        80%{
+            transform: scale(.75);
+        }
+        100%{
+            transform: scale(.75);
+        }
+
+
+        
+            /* 0% {
+              background-position: 0 0;
+            }
+            50% {
+              background-position: 400% 0;
+            }
+            100% {
+              background-position: 0 0;
+            } */
+          
+}
+
+
+
+/* ///////////////////////////////// */
+
+
+body {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: #1e1f20;
+    font-family: "proxima-nova", "Lato", "Source Sans Pro", "Raleway", Arial,
+      sans-serif;
+  
+    -webkit-transition: background 0.75s ease;
+    -moz-transition: background 0.75s ease;
+    -ms-transition: background 0.75s ease;
+    -o-transition: background 0.75s ease;
+    transition: background 0.75s ease;
+  }
+
+
+  #background-wrap {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  @keyframes animateBubble {
+    0% {
+      margin-top: 1000px;
+    }
+    100% {
+      margin-top: -100%;
+    }
+  }
+  
+  /* ANIMATIONS */
+  
+  .x1 {
+    animation: animateBubble 25s linear infinite,
+      sideWays 2s ease-in-out infinite alternate;
+  
+    left: -5%;
+    top: 5%;
+  
+    transform: scale(0.6);
+  }
+  
+  .x2 {
+    animation: animateBubble 20s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  
+    left: 5%;
+    top: 80%;
+  
+    transform: scale(0.4);
+  }
+  
+  .x3 {
+    animation: animateBubble 28s linear infinite,
+      sideWays 2s ease-in-out infinite alternate;
+  
+    left: 10%;
+    top: 40%;
+  
+    transform: scale(0.7);
+  }
+  
+  .x4 {
+    animation: animateBubble 22s linear infinite,
+      sideWays 3s ease-in-out infinite alternate;
+  
+    left: 20%;
+    top: 0;
+  
+    transform: scale(0.3);
+  }
+  
+  .x5 {
+    animation: animateBubble 29s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  
+    left: 30%;
+    top: 50%;
+  
+    transform: scale(0.5);
+  }
+  
+  .x6 {
+    animation: animateBubble 21s linear infinite,
+      sideWays 2s ease-in-out infinite alternate;
+  
+    left: 50%;
+    top: 0;
+  
+    transform: scale(0.8);
+  }
+  
+  .x7 {
+    animation: animateBubble 20s linear infinite,
+      sideWays 2s ease-in-out infinite alternate;
+  
+    left: 65%;
+    top: 70%;
+  
+    transform: scale(0.4);
+  }
+  
+  .x8 {
+    animation: animateBubble 22s linear infinite,
+      sideWays 3s ease-in-out infinite alternate;
+  
+    left: 80%;
+    top: 10%;
+  
+    transform: scale(0.3);
+  }
+  
+  .x9 {
+    animation: animateBubble 29s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  
+    left: 90%;
+    top: 50%;
+  
+    transform: scale(0.6);
+  }
+  
+  .x10 {
+    animation: animateBubble 26s linear infinite,
+      sideWays 2s ease-in-out infinite alternate;
+  
+    left: 80%;
+    top: 80%;
+  
+    transform: scale(0.3);
+  }
+  .x11 {
+    animation: animateBubble 10s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+  
+    left: 10%;
+    top: 80%;
+  
+    transform: scale(0.3);
+  }
+  
+  /* OBJECTS */
+  
+  .bubble {
+    border-radius: 50%;
+  
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2),
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  
+    height: 200px;
+    position: absolute;
+    width: 200px;
+  }
+  
+  .bubble:after {
+  
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+    border-radius: 50%;
+  
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+  
+    content: "";
+    height: 180px;
+    left: 10px;
+    position: absolute;
+    width: 180px;
+  }
+
+/* /////////////////////////////////// */
+
+
+
